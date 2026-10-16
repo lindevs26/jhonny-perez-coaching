@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel privado | Jhonny Perez</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314181f'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='24' fill='%23dfa53c' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/><path d="M12 4v11"/><path d="M8 8l4-4 4 4"/></g></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14"/><path d="M10 11v6M14 11v6"/><path d="M6.5 7l1 12h9l1-12"/><path d="M9.5 7V5h5v2"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h3.5a1.5 1.5 0 0 1 1.5 1.5v13a1.5 1.5 0 0 1-1.5 1.5H15"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h9"/></g></symbol>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">JP</span>
+        <span class="brand-text">Jhonny Perez<small>Coach personal</small></span>
+      </a>
+      <span class="pill">Área privada</span>
+    </div>
+  </header>
+
+  <main class="private">
+    <section class="login-view" id="loginView">
+      <div class="login-card">
+        <div class="lock-badge"><svg class="ic ic-lg"><use href="#i-lock"/></svg></div>
+        <h1>Panel de administración</h1>
+        <p>Área exclusiva de Jhonny Perez. Ingresa tus credenciales para gestionar los videos de la web.</p>
+        <form id="loginForm">
+          <div class="field">
+            <label for="user">Usuario</label>
+            <input type="text" id="user" placeholder="Tu usuario" autocomplete="username" required />
+          </div>
+          <div class="field">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" placeholder="••••••••" autocomplete="current-password" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Ingresar al panel</button>
+        </form>
+        <p class="login-note">Vista de maqueta: por ahora cualquier usuario y contraseña dan acceso. En la versión final se protegerá con autenticación real en el servidor y solo Jhonny tendrá sus credenciales.</p>
+      </div>
+    </section>
+
+    <section class="admin-view" id="adminView" hidden>
+      <div class="container">
+        <div class="admin-top">
+          <div>
+            <h1>Hola, Jhonny</h1>
+            <p>Desde aquí puedes subir nuevos videos y eliminar los que ya no quieras mostrar en la web.</p>
+          </div>
+          <button class="btn btn-ghost" id="logoutBtn"><svg class="ic ic-sm"><use href="#i-logout"/></svg> Cerrar sesión</button>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>Videos de la sección pública</h3>
+              <p>Los cambios son solo visuales: esta maqueta no guarda datos.</p>
+            </div>
+            <span class="pill">Vista de maqueta</span>
+          </div>
+          <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Subir videos">
+            <svg class="ic ic-lg"><use href="#i-upload"/></svg>
+            <p><strong>Arrastra y suelta tus videos aquí</strong></p>
+            <p class="hint">o haz clic para seleccionar · MP4, MOV o WEBM · máx. 500 MB</p>
+            <input type="file" id="videoInput" accept="video/*" multiple hidden />
+          </div>
+          <ul class="video-list" id="videoList">
+            <li class="video-item">
+              <div class="thumb"><img src="https://picsum.photos/seed/coach-v1/240/135" alt="" /></div>
+              <div class="info">
+                <p class="title">Cómo salir de tu zona de confort</p>
+                <p class="meta">12:45 · Publicado hace 2 semanas</p>
+              </div>
+              <label class="switch" title="Mostrar en la web">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+              <button class="icon-btn delete" aria-label="Eliminar video"><svg class="ic ic-sm"><use href="#i-trash"/></svg></button>
+            </li>
+            <li class="video-item">
+              <div class="thumb"><img src="https://picsum.photos/seed/coach-v2/240/135" alt="" /></div>
+              <div class="info">
+                <p class="title">Rutina de enfoque para empezar el día</p>
+                <p class="meta">08:20 · Publicado hace 1 mes</p>
+              </div>
+              <label class="switch" title="Mostrar en la web">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+              <button class="icon-btn delete" aria-label="Eliminar video"><svg class="ic ic-sm"><use href="#i-trash"/></svg></button>
+            </li>
+            <li class="video-item">
+              <div class="thumb"><img src="https://picsum.photos/seed/coach-v3/240/135" alt="" /></div>
+              <div class="info">
+                <p class="title">Manejo de la presión antes de competir</p>
+                <p class="meta">15:02 · Publicado hace 1 mes</p>
+              </div>
+              <label class="switch" title="Mostrar en la web">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+              <button class="icon-btn delete" aria-label="Eliminar video"><svg class="ic ic-sm"><use href="#i-trash"/></svg></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <p>Panel privado de Jhonny Perez · Sitio desarrollado por <strong>LinDevs</strong></p>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+  <script src="script.js"></script>
+</body>
+</html>

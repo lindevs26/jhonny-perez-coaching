@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhonny Perez | Coach Personal</title>
+  <meta name="description" content="Coaching personal, talleres y acompañamiento con Jhonny Perez. Sesiones 1 a 1 online y presenciales." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314181f'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='24' fill='%23dfa53c' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/><path d="M12 4v11"/><path d="M8 8l4-4 4 4"/></g></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14"/><path d="M10 11v6M14 11v6"/><path d="M6.5 7l1 12h9l1-12"/><path d="M9.5 7V5h5v2"/></g></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20c1.4-3.6 4-5 7.2-5s5.8 1.4 7.2 5"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8.5" r="3.2"/><path d="M2.8 19.5c1.2-3 3.3-4.3 6.2-4.3s5 1.3 6.2 4.3"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15.4 14.6c2.7.2 4.5 1.5 5.4 3.9"/></g></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="10" rx="3"/><path d="M6 11a6 6 0 0 0 12 0"/><path d="M12 17v4M9 21h6"/></g></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/></g><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/></g><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5l8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.7a8 8 0 0 1-11.4 7.2L4.5 20l1.1-5A8 8 0 1 1 21 11.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6"/><path d="M6 11l6-6 6 6"/></g></symbol>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">JP</span>
+        <span class="brand-text">Jhonny Perez<small>Coach personal</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Método</a>
+        <a href="#galeria">Galería</a>
+        <a href="#videos">Videos</a>
+        <a href="#contacto" class="nav-cta">Agenda tu sesión</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="ic ic-open"><use href="#i-menu"/></svg>
+        <svg class="ic ic-close"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="progress" id="progress"></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Coach personal · Alto rendimiento</span>
+          <h1>Desbloquea tu <em>máximo potencial</em></h1>
+          <p class="lead">Acompaño a personas y equipos a definir metas claras, construir hábitos sólidos y sostener resultados que transforman su día a día.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Agenda tu sesión</a>
+            <a href="#videos" class="btn btn-ghost">Ver videos</a>
+          </div>
+          <ul class="stats">
+            <li><strong data-count="10" data-prefix="+">+10</strong><span>años de experiencia</span></li>
+            <li><strong data-count="350" data-prefix="+">+350</strong><span>clientes acompañados</span></li>
+            <li><strong data-count="98" data-suffix="%">98%</strong><span>de satisfacción</span></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="media media-portrait">
+            <img src="https://picsum.photos/seed/coach-hero/900/1100" alt="Espacio de coaching y bienestar" />
+          </div>
+          <div class="hero-badge"><span class="pulse"></span> Sesiones 1 a 1 · Online y presencial</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <div class="media media-about">
+            <img src="https://picsum.photos/seed/coach-session/900/1100" alt="Sesión de coaching y acompañamiento" />
+          </div>
+          <div class="about-card">“El cambio no empieza el lunes: empieza hoy.”</div>
+        </div>
+        <div class="about-copy reveal">
+          <span class="eyebrow">Sobre mí</span>
+          <h2>Un método probado, un acompañamiento humano</h2>
+          <p>Soy Jhonny Perez, coach personal y de alto rendimiento. Desde hace más de 10 años acompaño a personas, deportistas y equipos a ordenar sus objetivos, romper los patrones que frenan su avance y construir la disciplina que sostiene el éxito.</p>
+          <p>Mi enfoque combina herramientas de coaching, psicología del rendimiento y planificación práctica: nada de teorías que no se aplican. Cada proceso se adapta a la persona, su contexto y sus metas.</p>
+          <ul class="checklist">
+            <li><span class="tick"><svg class="ic ic-sm"><use href="#i-check"/></svg></span> Certificación en Coaching Ejecutivo (ICF)</li>
+            <li><span class="tick"><svg class="ic ic-sm"><use href="#i-check"/></svg></span> Especialista en hábitos, enfoque y productividad</li>
+            <li><span class="tick"><svg class="ic ic-sm"><use href="#i-check"/></svg></span> Formador de equipos y líderes de alto rendimiento</li>
+          </ul>
+          <a href="#servicios" class="link-arrow">Conoce mis programas →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Programas pensados para cada meta</h2>
+          <p>Elige el formato que mejor se adapte a tu momento: acompañamiento individual, procesos grupales o intervenciones para tu equipo.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><svg class="ic"><use href="#i-user"/></svg></div>
+            <h3>Coaching 1 a 1</h3>
+            <p>Sesiones personalizadas para definir metas, superar bloqueos y avanzar con un plan claro.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><svg class="ic"><use href="#i-users"/></svg></div>
+            <h3>Coaching grupal</h3>
+            <p>Procesos en grupo donde la energía y la experiencia compartida aceleran el cambio.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><svg class="ic"><use href="#i-mic"/></svg></div>
+            <h3>Talleres y charlas</h3>
+            <p>Intervenciones para empresas e instituciones, adaptadas a cada audiencia y objetivo.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><svg class="ic"><use href="#i-target"/></svg></div>
+            <h3>Programas de 12 semanas</h3>
+            <p>Un proceso estructurado con seguimiento semanal y resultados medibles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Método</span>
+          <h2>Así trabajamos juntos</h2>
+          <p>Tres pasos simples para pasar de la intención a los resultados, con acompañamiento en cada etapa.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Diagnóstico gratuito</h3>
+            <p>Una primera conversación de 30 minutos para entender tu punto de partida, tus metas y qué te está frenando.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Plan personalizado</h3>
+            <p>Diseñamos juntos un plan con objetivos claros, hábitos concretos y fechas para medir tu avance.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Acompañamiento y resultados</h3>
+            <p>Sesiones periódicas, seguimiento constante y ajustes para que los cambios se sostengan en el tiempo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Galería</span>
+          <h2>Momentos que hablan por sí solos</h2>
+          <p>Sesiones, talleres y experiencias junto a quienes han decidido dar el paso.</p>
+        </div>
+        <div class="carousel reveal" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <figure class="slide">
+              <img src="https://picsum.photos/seed/coach-g1/1600/900" alt="Sesión de coaching 1 a 1" />
+              <figcaption>
+                <h3>Sesiones personalizadas 1 a 1</h3>
+                <p>Trabajamos tus metas con un plan claro y medible.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="https://picsum.photos/seed/coach-g2/1600/900" alt="Taller motivacional" />
+              <figcaption>
+                <h3>Talleres y charlas motivacionales</h3>
+                <p>Energía y herramientas para equipos y audiencias.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="https://picsum.photos/seed/coach-g3/1600/900" alt="Entrenamiento y bienestar" />
+              <figcaption>
+                <h3>Entrenamiento y bienestar</h3>
+                <p>Hábitos que sostienen tus resultados en el tiempo.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="https://picsum.photos/seed/coach-g4/1600/900" alt="Acompañamiento en competencias" />
+              <figcaption>
+                <h3>Acompañamiento en competencias</h3>
+                <p>Preparación mental para el alto rendimiento.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="https://picsum.photos/seed/coach-g5/1600/900" alt="Comunidad y trabajo en equipo" />
+              <figcaption>
+                <h3>Comunidad y trabajo en equipo</h3>
+                <p>Crecer también es un deporte en equipo.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Imagen anterior"><svg class="ic"><use href="#i-chev-left"/></svg></button>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Imagen siguiente"><svg class="ic"><use href="#i-chev-right"/></svg></button>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Videos</span>
+          <h2>Aprende conmigo, sin filtros</h2>
+          <p>Fragmentos de sesiones, talleres y ejercicios prácticos que puedes aplicar desde hoy.</p>
+        </div>
+        <div class="chips reveal">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="talleres">Talleres</button>
+          <button class="chip" data-filter="ejercicios">Ejercicios</button>
+          <button class="chip" data-filter="sesiones">Sesiones 1 a 1</button>
+        </div>
+        <div class="video-grid">
+          <article class="video-card reveal" data-cat="talleres" data-demo="Demo: aquí se reproducirá el video cuando se conecte el sistema.">
+            <div class="video-thumb">
+              <img src="https://picsum.photos/seed/coach-v1/1200/675" alt="Video: cómo salir de tu zona de confort" />
+              <button class="play-btn" aria-label="Reproducir video"><svg class="ic ic-play"><use href="#i-play"/></svg></button>
+              <span class="duration">12:45</span>
+            </div>
+            <div class="video-body">
+              <h3>Cómo salir de tu zona de confort</h3>
+              <p>Taller en vivo · hace 2 semanas</p>
+            </div>
+          </article>
+          <article class="video-card reveal" data-cat="ejercicios" data-demo="Demo: aquí se reproducirá el video cuando se conecte el sistema.">
+            <div class="video-thumb">
+              <img src="https://picsum.photos/seed/coach-v2/1200/675" alt="Video: rutina de enfoque para empezar el día" />
+              <button class="play-btn" aria-label="Reproducir video"><svg class="ic ic-play"><use href="#i-play"/></svg></button>
+              <span class="duration">08:20</span>
+            </div>
+            <div class="video-body">
+              <h3>Rutina de enfoque para empezar el día</h3>
+              <p>Ejercicio práctico · hace 1 mes</p>
+            </div>
+          </article>
+          <article class="video-card reveal" data-cat="sesiones" data-demo="Demo: aquí se reproducirá el video cuando se conecte el sistema.">
+            <div class="video-thumb">
+              <img src="https://picsum.photos/seed/coach-v3/1200/675" alt="Video: manejo de la presión antes de competir" />
+              <button class="play-btn" aria-label="Reproducir video"><svg class="ic ic-play"><use href="#i-play"/></svg></button>
+              <span class="duration">15:02</span>
+            </div>
+            <div class="video-body">
+              <h3>Manejo de la presión antes de competir</h3>
+              <p>Sesión 1 a 1 · hace 1 mes</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contacto">
+      <div class="container cta-inner">
+        <div class="reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>¿Damos el primer paso juntos?</h2>
+          <p>Agenda una sesión de diagnóstico gratuita de 30 minutos y conversemos sobre tus metas.</p>
+        </div>
+        <div class="cta-actions reveal">
+          <button class="btn btn-primary" data-demo="Demo: aquí se abrirá el chat de WhatsApp."><svg class="ic ic-sm"><use href="#i-chat"/></svg> WhatsApp: +00 000 000 000</button>
+          <button class="btn btn-ghost" data-demo="Demo: aquí se abrirá el correo electrónico."><svg class="ic ic-sm"><use href="#i-mail"/></svg> jhonny@coaching.com</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark">JP</span>
+          <span class="brand-text">Jhonny Perez<small>Coach personal</small></span>
+        </div>
+        <p class="muted">Transforma tus hábitos, alcanza tus metas.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Método</a>
+        <a href="#galeria">Galería</a>
+        <a href="#videos">Videos</a>
+      </nav>
+      <div class="socials">
+        <button class="social-btn" aria-label="Instagram" data-demo="Demo: enlace a Instagram."><svg class="ic"><use href="#i-instagram"/></svg></button>
+        <button class="social-btn" aria-label="YouTube" data-demo="Demo: enlace a YouTube."><svg class="ic"><use href="#i-youtube"/></svg></button>
+        <button class="social-btn" aria-label="Correo" data-demo="Demo: enlace al correo."><svg class="ic"><use href="#i-mail"/></svg></button>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Jhonny Perez. Todos los derechos reservados.</p>
+      <p class="credit">Sitio desarrollado por <strong>LinDevs</strong></p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><svg class="ic"><use href="#i-up"/></svg></button>
+  <div class="toast-wrap" id="toastWrap"></div>
+  <script src="script.js"></script>
+</body>
+</html>
